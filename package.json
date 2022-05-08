@@ -2,5 +2,26 @@
   "dependencies": {
     "inquirer": "^8.2.4",
     "jest": "^28.1.0"
-  }
+  },
+  "name": "my-team-profile-generator",
+  "description": "Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wizzle13/my-team-profile-generator.git"
+  },
+  "author": "Chris Burton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wizzle13/my-team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/Wizzle13/my-team-profile-generator#readme"
 }
