@@ -70,7 +70,22 @@ const addTeam =() => {
             type: 'list',
             name: 'members',
             message: 'What do you want to do next?',
-        choices: ['Add Engineer', 'Add Intern', 'Build the page']
+            choices: ['Add Engineer', 'Add Intern', 'Build the page']
+        },
+        {
+            when(answers) {
+                if (answers.members === 'Add Engineer') {
+                    console.log("engineer");
+                    // engineer();
+                } else if (answers.members === 'Add Intern') {
+                    console.log("intern");
+                    // Intern();
+                } else {
+                    console.log("build");
+                    // buildHtml();
+                }
+                    
+            }
         }
     ])
 }
@@ -83,9 +98,9 @@ function manager() {
 
 function init() {
     console.log(`
-    ===================
-    Lets Build Our Team
-    ===================
+    ====================
+    Lets Build Your Team
+    ====================
     `)
     manager()
     
