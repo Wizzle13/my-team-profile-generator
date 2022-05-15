@@ -3,6 +3,8 @@
   ## Description
   Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
 
+![Open Issues](https://img.shields.io/github/issues-raw/wizzle13/my-team-profile-generator?style=plastic)
+
   ### Tools and Languages used
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=plastic&logo=html5&logoColor=white)
   ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=plastic&logo=css3&logoColor=white)
