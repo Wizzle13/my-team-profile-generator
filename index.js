@@ -1,3 +1,4 @@
+const fs = require('fs');
 const inquirer = require('inquirer');
 
 //  enter standard info for all enployees
@@ -64,6 +65,42 @@ const managerQuestions = () => {
     ]);
 };  
 
+const engineerQuestions = () => {
+    return inquirer.prompt([
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Enter Github User Name.',
+            validate: githubInput => {
+                if (githubInput) {
+                    return true;
+                } else {
+                    console.log ('Please enter github user name.');
+                    return false;
+                }
+            }
+        }
+    ]);
+};
+
+const internQuestions = () => {
+    return inquirer.prompt([
+        {
+            type: 'input',
+            name: 'school',
+            message: 'Enter School Name.',
+            validate: schoolInput => {
+                if (schoolInput) {
+                    return true;
+                } else {
+                    console.log ('Please enter School name.');
+                    return false;
+                }
+            }
+        }
+    ]);
+};
+
 const addTeam =() => {
     return inquirer.prompt ([
         {
@@ -75,11 +112,9 @@ const addTeam =() => {
         {
             when(answers) {
                 if (answers.members === 'Add Engineer') {
-                    console.log("engineer");
-                    // engineer();
+                    engineer();
                 } else if (answers.members === 'Add Intern') {
-                    console.log("intern");
-                    // Intern();
+                    intern();
                 } else {
                     console.log("build");
                     // buildHtml();
@@ -87,12 +122,45 @@ const addTeam =() => {
                     
             }
         }
-    ])
-}
+    ]);
+};
+
+const addManagerProfile = () =>{
+
+};
+function engineer() {
+    console.log(`
+    ====================
+    Engineer Information
+    ====================
+    `)
+    employeeQuestions()
+    .then(engineerQuestions)
+    // .then(addManagerProfile)
+    .then(addTeam)
+};
+
+function intern() {
+    console.log(`
+    ==================
+    Intern Information
+    ==================
+    `)
+    employeeQuestions()
+    .then(internQuestions)
+    // .then(addManagerProfile)
+    .then(addTeam)
+};
 
 function manager() {
+    console.log(`
+    ===================
+    Manager Information
+    ===================
+    `)
     employeeQuestions()
     .then(managerQuestions)
+    // .then(addManagerProfile)
     .then(addTeam)
 };
 
