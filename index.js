@@ -1,5 +1,6 @@
-const fs = require('fs');
+var fs = require('fs');
 const inquirer = require('inquirer');
+const generatePage = require('./src/page-template');
 
 //  enter standard info for all enployees
 
@@ -116,8 +117,14 @@ const addTeam =() => {
                 } else if (answers.members === 'Add Intern') {
                     intern();
                 } else {
-                    console.log("build");
-                    // buildHtml();
+                    console.log("build")
+                    .then(data => {
+                        return generagePage(data);
+                    })
+                    
+                    .then(generagePage => {
+                        return writeToFile(generagePage);
+                    })
                 }
                     
             }
@@ -173,5 +180,14 @@ function init() {
     manager()
     
 };
+
+// Create a function to write README file
+function writeToFile(generagePage) {
+    fs.writeFile('./dist/index.html',generagePage, err => {
+        if (err) throw err;
+        console.log('Page Complete')
+    })
+}
+
 
 init();

@@ -7,7 +7,7 @@
 
   ### Tools and Languages used
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=plastic&logo=html5&logoColor=white)
-  ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=plastic&logo=css3&logoColor=white)
+  ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?plastic&logo=bootstrap&logoColor=white)
   ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=plastic&logo=node.js&logoColor=white)
   ![jest](https://img.shields.io/badge/Jest-323330?style=plastic&logo=Jest&logoColor=white)
 
@@ -27,7 +27,9 @@
   
 
   ## Screenshots
-  <img src = "  ./screenshots/screenshot.jpg">
+  <img src = "./screenshots/passing-tests.png">
+
+  <img src = "./screenshots/mock-output.png">
 
   
 
