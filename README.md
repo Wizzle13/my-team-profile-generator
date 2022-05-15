@@ -38,7 +38,7 @@
   ## Links
   GitHub Repository: https://github.com/wizzle13/my-team-profile-generator
 
-  GitHub URL: https://wizzle13.github.io/my-team-profile-generator
+  video: https://drive.google.com/file/d/1sFrV8LU3Nn2L_X4oOfct8VHkPP073mjR/view?usp=sharing
 
 
 ![Made With](https://img.shields.io/badge/Made%20with-Ultimate%20README%20Generator-blue?style=plastic)

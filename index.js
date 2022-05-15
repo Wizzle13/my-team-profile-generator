@@ -144,7 +144,7 @@ function engineer() {
     employeeQuestions()
     .then(engineerQuestions)
     // .then(addManagerProfile)
-    .then(addTeam)
+    .then(addTeam);
 };
 
 function intern() {
@@ -168,7 +168,7 @@ function manager() {
     employeeQuestions()
     .then(managerQuestions)
     // .then(addManagerProfile)
-    .then(addTeam)
+    .then(addTeam);
 };
 
 function init() {
